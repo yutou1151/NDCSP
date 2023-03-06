@@ -1,0 +1,107 @@
+\documentclass[10pt]{article}         %% What type of document you're writing.
+\usepackage{amsmath,amsfonts,amssymb}   %% AMS mathematics macros
+
+%% Title Information.
+
+\title{Navigation sailing formula}
+\author{Jose Perez}
+%% \date{2 July 2004}           %% By default, LaTeX uses the current date
+
+%%%%% The Document
+
+\begin{document}
+
+\maketitle
+
+\section{Plan sailing}
+$$
+P=D\times{sinC}
+$$
+
+$$
+DL=D\times{cosC}
+$$
+
+$$
+C=tan^{-1}(\frac{P}{Dl})
+$$
+
+$$
+D=\frac{p}{sinC}
+$$
+
+$$
+C=tan^{-1}(\frac{sinDL}{{cosL1}\times{tanL2}-{sinL1}\times{cosDL}})
+$$
+
+$$
+D=cos^{-1}({sinL1}\times{sinL2}+{cosL1}\times{cosL2}\times{cosDL})
+$$
+
+$$
+P_A=\frac{P_i(\%_A+100)}{100} \\
+$$
+
+$$
+P_A=P_i\left (\frac{\%_A+100}{100}  \right ) \\
+$$
+
+$$
+P_A=P_i\left (\frac{\%_A}{100}+\frac{100}{100}  \right ) \\
+$$
+
+$$
+P_A=P_i\left (\frac{\%_A}{100}+1  \right ) \\
+$$
+
+$$
+P_A=P_i\left (1+\frac{\%_A}{100}  \right ) \\
+$$
+
+\newpage
+
+\section{Disminuci\'on Porcentual a Precio Disminuido}
+$$
+\%_D=\frac{P_i-P_D}{P_i}\times 100 \\
+$$
+
+$$
+P_i\times(\%_D)=(P_i-P_D)\times 100 \\
+$$
+
+$$
+P_i\times(\%_D)=P_i\times 100-P_D\times 100 \\
+$$
+
+$$
+P_i\times(\%_D)-P_i\times 100=-P_D\times 100 \\
+$$
+
+$$
+P_i(\%_D-100)=-P_D\times 100 \\
+$$
+
+$$
+-P_D\times 100=P_i(\%_D-100) \\
+$$
+
+$$
+P_D=\frac{P_i(\%_D-100)}{-100} \\
+$$
+
+$$
+P_D=P_i\left (\frac{\%_D-100}{-100}  \right ) \\
+$$
+
+$$
+P_D=P_i\left (\frac{\%_D}{-100}-\frac{100}{-100}  \right ) \\
+$$
+
+$$
+P_D=P_i\left (-\frac{\%_D}{100}+1  \right ) \\
+$$
+
+$$
+P_D=P_i\left (1-\frac{\%_D}{100}  \right )
+$$
+\end{document}
