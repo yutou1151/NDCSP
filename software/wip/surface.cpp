@@ -206,7 +206,7 @@ int main()
                     }
                 }
             }
-            C = atan(( xP * M_PI / 180.0 ) / ( xDL * M_PI / 180.0 ));
+            C = atan(xP / xDL);
             D = xP / sin(C);
             cout << "C= " << C << endl;
             cout << "D= " << D << endl;
