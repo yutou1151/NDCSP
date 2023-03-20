@@ -3,6 +3,10 @@
 using namespace std;
 
 float C, D, DL, P, xC, xD, xDL, xP;
+double convertxC(double radian)
+{
+	return(xC * (180 / M_PI));
+}
 
 int main()
 {
@@ -206,10 +210,14 @@ int main()
                     }
                 }
             }
-            C = atan(xP / xDL);
-            D = xP / sin(C);
-            cout << "C= " << C << endl;
-            cout << "D= " << D << endl;
+            xC = atan(xP / xDL);
+            C = convertxC(xC);
+            
+            D = (xP * (180 / M_PI)) / sin(C);    //wip
+            cout << "xP " << xP << endl;    //wip
+            cout << "xDL " << xDL << endl;    //wip
+            cout << "C = " << C << endl;
+            cout << "D = " << D << endl;
         }
     }
     system("pause");
