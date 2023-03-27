@@ -7,6 +7,11 @@ double convertxC(double radian)
 {
 	return(xC * (180 / M_PI));
 }
+double convertxD(double radian)
+{
+	return(xD * (180 / M_PI));
+}
+
 
 int main()
 {
@@ -111,8 +116,8 @@ int main()
         }
         P = xD * sin(xC * M_PI / 180.0);
         DL = xD * cos(xC * M_PI / 180.0);
-        cout << "P= " << P << endl;
-        cout << "DL= " << DL << endl;
+        cout << "P = " << P << endl;
+        cout << "DL = " << DL << endl;
     }
     else
     {
@@ -212,10 +217,7 @@ int main()
             }
             xC = atan(xP / xDL);
             C = convertxC(xC);
-            
-            D = (xP * 180 / M_PI) / sin(C);    //wip
-            cout << "xP " << xP << endl;    //wip
-            cout << "xDL " << xDL << endl;    //wip
+            D = (xP / sin(xC)) * 60;
             cout << "C = " << C << endl;
             cout << "D = " << D << endl;
         }
