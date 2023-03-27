@@ -213,7 +213,7 @@ int main()
             xC = atan(xP / xDL);
             C = convertxC(xC);
             
-            D = (xP * (180 / M_PI)) / sin(C);    //wip
+            D = (xP * 180 / M_PI) / sin(C);    //wip
             cout << "xP " << xP << endl;    //wip
             cout << "xDL " << xDL << endl;    //wip
             cout << "C = " << C << endl;
@@ -241,5 +241,5 @@ C=tan-1(P/DL) D=P/sinC
 1.C=5 D=188
 ANS:DL=187.3'N P=16.4'E
 2.DL=2°10'N P=90'W
-ANS:C=325.3° D=158.1'
+ANS:C=34.7° D=158.1'
 **/
