@@ -1,5 +1,5 @@
-# NDCP
-### Navigation Distance and Course Project
+# NDCSP
+### Navigation Distance and Course for Sailling Project
 
 #### Functions
 1. Great Cycle
@@ -10,8 +10,6 @@
 6. Traverse
 
 #### Author
-Cheng Chieh, Liao
-
-Takasaka, Chikuho
-
-SB
+Cheng Chieh, Liao - Keelung Maritime Senior High School - CEO  
+Takasaka, Chikuho - Keelung Maritime Senior High School - Employee  
+Yu Chen, Kuo - Keelung Maritime Senior High School - Disemployed  
