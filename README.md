@@ -1,5 +1,5 @@
 # NDCP
-## Navigation Distance and Course Project
+### Navigation Distance and Course Project
 
 #### Functions
 1. Great Cycle
