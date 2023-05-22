@@ -2,7 +2,7 @@
 #include <cmath>
 using namespace std;
 
-float P, DLo, L;
+float P, DLo, L, xDlo, xL, xDL, xP;
 
 int main()
 {
@@ -105,10 +105,11 @@ int main()
                 }
             }
         }
-        P = xD * sin(xC * M_PI / 180.0);
-        DL = xD * cos(xC * M_PI / 180.0);
-        cout << "P = " << P << endl;
-        cout << "DL = " << DL << endl;
+        DLo = xDlo * M_PI / 180.0;
+        L = xL * M_PI / 180.0; 
+        P = xDlo * cos(xL * M_PI / 180.0);
+        cout << "DLo : " << DLo << endl;
+        cout << "P : " << P << endl;
     }
     else
     {
@@ -206,19 +207,18 @@ int main()
                     }
                 }
             }
-            xC = atan(xP / xDL);
-            C = convertxC(xC);
-            D = (xP / sin(xC)) * 60;
-            cout << "C = " << C << endl;
-            cout << "D = " << D << endl;
+        L = xL * M_PI / 180.0;
+        P = xP * M_PI / 180.0; 
+        DLo = xP / cos(L);
+
+cout << "L : " << L << endl;
+cout << "P : " << P << endl;
+cout << "DLo : " << DLo << endl;
         }
     }
     system("pause");
     return 0;
 }
-
-P = DLo * cos(L);
-DLo = P / cos(L);
 
 
 
